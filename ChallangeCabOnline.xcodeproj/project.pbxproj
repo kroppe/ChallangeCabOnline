@@ -13,6 +13,8 @@
 		39B723DE2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B723DC2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld */; };
 		39B723E02219BEBB0073438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B723DF2219BEBB0073438D /* Assets.xcassets */; };
 		39B723E32219BEBB0073438D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B723E12219BEBB0073438D /* LaunchScreen.storyboard */; };
+		39B723EB2219BF790073438D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723EA2219BF790073438D /* DataService.swift */; };
+		39B723ED2219BFD90073438D /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723EC2219BFD90073438D /* DogModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		39B723DF2219BEBB0073438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39B723E22219BEBB0073438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39B723E42219BEBB0073438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B723EA2219BF790073438D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		39B723EC2219BFD90073438D /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				39B723E12219BEBB0073438D /* LaunchScreen.storyboard */,
 				39B723E42219BEBB0073438D /* Info.plist */,
 				39B723DC2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld */,
+				39B723EA2219BF790073438D /* DataService.swift */,
+				39B723EC2219BFD90073438D /* DogModel.swift */,
 			);
 			path = ChallangeCabOnline;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B723DE2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld in Sources */,
+				39B723ED2219BFD90073438D /* DogModel.swift in Sources */,
 				39B723D82219BEBB0073438D /* ViewController.swift in Sources */,
 				39B723D62219BEBB0073438D /* AppDelegate.swift in Sources */,
+				39B723EB2219BF790073438D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

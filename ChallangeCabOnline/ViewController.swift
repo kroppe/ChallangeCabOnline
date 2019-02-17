@@ -8,18 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
+    @IBOutlet weak var dogImageView: UIImageView!
+    @IBOutlet weak var dogTableView: UITableView!
+    var dogs: [DogModel] = []
+    var dataService = DataService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        dogTableView.delegate = self
+        dogTableView.dataSource = self
+        dataService.loadCoreData() {dogs in
+            
+            self.dogs = dogs
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+            DispatchQueue.main.async {
+    
+                self.dogTableView.reloadData()
+            }
+            
+            print(dogs.count)}
+        
+        //dataService.deleteCoreData(){data in print(data) }
+        //dataService.getAndSaveData(){data in  print(data) }
     }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dogs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = dogTableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+            cell?.textLabel?.text = self.dogs[indexPath.row].dogBreed
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            self.dogImageView.image = self.dogs[indexPath.row].dogImage
+            
+        }
+    }
+    
 
 }
 
