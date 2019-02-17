@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    @IBOutlet weak var UIAIView: UIActivityIndicatorView!
     @IBOutlet weak var dogImageView: UIImageView!
     @IBOutlet weak var dogTableView: UITableView!
     var dogs: [DogModel] = []
@@ -18,21 +18,47 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.UIAIView.isHidden = false
+        self.UIAIView.startAnimating()
         dogTableView.delegate = self
         dogTableView.dataSource = self
+        
+
+ 
+            //dataService.deleteCoreData(){data in print(data) }
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
         dataService.loadCoreData() {dogs in
             
             self.dogs = dogs
-
-            DispatchQueue.main.async {
-    
-                self.dogTableView.reloadData()
+            if(dogs.count != 0) {
+                DispatchQueue.main.async {
+                    
+                    self.dogTableView.reloadData()
+                    self.UIAIView.stopAnimating()
+                    self.UIAIView.isHidden = true
+                }
+                
+            } else {
+                
+                self.dataService.getAndSaveData(){
+                    self.dataService.loadCoreData() {dogs in
+                        self.dogs = dogs
+                        if(dogs.count != 0) {
+                            DispatchQueue.main.async {
+                                self.dogTableView.reloadData()
+                                self.UIAIView.stopAnimating()
+                                self.UIAIView.isHidden = true
+                            }
+                        }
+                    }
+                }
             }
+            print(dogs.count)
             
-            print(dogs.count)}
-        
-        //dataService.deleteCoreData(){data in print(data) }
-        //dataService.getAndSaveData(){data in  print(data) }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

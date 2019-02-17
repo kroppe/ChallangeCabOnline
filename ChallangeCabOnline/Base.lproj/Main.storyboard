@@ -44,6 +44,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QZh-w3-q2t">
                                 <rect key="frame" x="16" y="20" width="343" height="135"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zGl-ye-VpE">
+                                <rect key="frame" x="177" y="163" width="20" height="21"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -52,13 +55,18 @@
                             <constraint firstItem="QZh-w3-q2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PTd-oR-KtX"/>
                             <constraint firstItem="OLA-ms-5F5" firstAttribute="top" secondItem="QZh-w3-q2t" secondAttribute="bottom" constant="39" id="XiY-wV-2LU"/>
                             <constraint firstItem="OLA-ms-5F5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YGu-dv-wdV"/>
+                            <constraint firstItem="zGl-ye-VpE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="a6x-xf-oCr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zGl-ye-VpE" secondAttribute="trailing" constant="178" id="gnO-tT-KiM"/>
+                            <constraint firstItem="zGl-ye-VpE" firstAttribute="top" secondItem="QZh-w3-q2t" secondAttribute="bottom" constant="8" id="hOS-Rv-Jqg"/>
                             <constraint firstItem="QZh-w3-q2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iIH-v8-x7X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OLA-ms-5F5" secondAttribute="bottom" constant="20" id="kZW-Nf-Buy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLA-ms-5F5" secondAttribute="trailing" constant="16" id="pOA-0C-Oj1"/>
+                            <constraint firstItem="OLA-ms-5F5" firstAttribute="top" secondItem="zGl-ye-VpE" secondAttribute="bottom" constant="10" id="v8O-ic-G56"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="UIAIView" destination="zGl-ye-VpE" id="cTc-GK-oG6"/>
                         <outlet property="dogImageView" destination="QZh-w3-q2t" id="SJS-bi-1Hd"/>
                         <outlet property="dogTableView" destination="OLA-ms-5F5" id="faz-6H-hir"/>
                     </connections>

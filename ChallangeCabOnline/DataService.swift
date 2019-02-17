@@ -26,9 +26,11 @@ class DataService {
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.newBackgroundContext()
     
-    func getAndSaveData(completionHandler: @escaping (String) -> Void) {
+    func getAndSaveData(completionHandler: @escaping () -> Void) {
+        var allSaved: Int = 0
         
         self.getAllDogs() {data in
+            print(data.count)
             for dog in data {
                 
                 self.getDogImageUrl(dogBreed: dog) {imageUrl in
@@ -36,9 +38,14 @@ class DataService {
                     self.getImageData(url: imageUrl) {imageData in
                         
                         self.saveCoreData(dog: coreData(dogBreed: dog, dogImageData: imageData))
+                        allSaved += 1
+                        if(allSaved == data.count) {
+                            completionHandler()
+                        }
                         
                     }
                 }
+
             }
         }
         
