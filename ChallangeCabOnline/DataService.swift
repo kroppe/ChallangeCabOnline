@@ -30,7 +30,7 @@ class DataService {
         var allSaved: Int = 0
         
         self.getAllDogs() {data in
-            print(data.count)
+            
             for dog in data {
                 
                 self.getDogImageUrl(dogBreed: dog) {imageUrl in
@@ -72,19 +72,14 @@ class DataService {
                 print(error!.localizedDescription)
             }
             
-            
             guard let data = data else { return }
             
             do
             {
                 let json = try JSONSerialization.jsonObject(with: data, options:.mutableContainers) as? NSMutableDictionary
                 responsImageUrl = json!["message"]! as! String
-                
-                print(responsImageUrl)
                 completionHandler(responsImageUrl)
-                
             }
-                
             catch let error as NSError
             {
                 print("An error occurred: \(error)")
@@ -92,7 +87,6 @@ class DataService {
             }
             
             }.resume()
-        
     }
     
     func getImageData(url: String!, completionHandler: @escaping (Data) -> Void) {
@@ -106,8 +100,6 @@ class DataService {
                 print(error!)
                 return
             }
-            print(url!)
-            print(data!)
             completionHandler(data!)
             
         }).resume()

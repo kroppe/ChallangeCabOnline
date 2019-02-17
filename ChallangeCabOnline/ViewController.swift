@@ -22,13 +22,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.UIAIView.startAnimating()
         dogTableView.delegate = self
         dogTableView.dataSource = self
-        
-            //dataService.deleteCoreData(){data in print(data) }
-    
+     
     }
     override func viewWillAppear(_ animated: Bool) {
 
             updateTableView()
+            //dataService.deleteCoreData(){data in print(data) }
         
     }
     
@@ -37,10 +36,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = dogTableView.dequeueReusableCell(withIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            as! DogTableViewCell
         
-            cell?.textLabel?.text = self.dogs[indexPath.row].dogBreed
-        return cell!
+        cell.dogCellLabel.text = dogs[indexPath.row].dogBreed
+        cell.dogCellImageView.image = dogs[indexPath.row].dogImage
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -88,8 +90,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                 }
             }
-            print(dogs.count)
-            
         }
         
     }

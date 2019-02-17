@@ -16,6 +16,7 @@
 		39B723EB2219BF790073438D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723EA2219BF790073438D /* DataService.swift */; };
 		39B723ED2219BFD90073438D /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723EC2219BFD90073438D /* DogModel.swift */; };
 		39B723EF2219E1D70073438D /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723EE2219E1D70073438D /* DogViewController.swift */; };
+		39B723F12219F3CA0073438D /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723F02219F3CA0073438D /* DogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		39B723EA2219BF790073438D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		39B723EC2219BFD90073438D /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		39B723EE2219E1D70073438D /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		39B723F02219F3CA0073438D /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				39B723EA2219BF790073438D /* DataService.swift */,
 				39B723EC2219BFD90073438D /* DogModel.swift */,
 				39B723EE2219E1D70073438D /* DogViewController.swift */,
+				39B723F02219F3CA0073438D /* DogTableViewCell.swift */,
 			);
 			path = ChallangeCabOnline;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				39B723DE2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld in Sources */,
 				39B723ED2219BFD90073438D /* DogModel.swift in Sources */,
+				39B723F12219F3CA0073438D /* DogTableViewCell.swift in Sources */,
 				39B723D82219BEBB0073438D /* ViewController.swift in Sources */,
 				39B723D62219BEBB0073438D /* AppDelegate.swift in Sources */,
 				39B723EB2219BF790073438D /* DataService.swift in Sources */,
