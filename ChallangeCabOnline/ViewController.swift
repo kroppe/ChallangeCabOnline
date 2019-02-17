@@ -27,7 +27,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
 
             updateTableView()
-            //dataService.deleteCoreData(){data in print(data) }
         
     }
     
