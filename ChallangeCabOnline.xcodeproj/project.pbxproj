@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39B723D62219BEBB0073438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723D52219BEBB0073438D /* AppDelegate.swift */; };
+		39B723D82219BEBB0073438D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B723D72219BEBB0073438D /* ViewController.swift */; };
+		39B723DB2219BEBB0073438D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B723D92219BEBB0073438D /* Main.storyboard */; };
+		39B723DE2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B723DC2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld */; };
+		39B723E02219BEBB0073438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B723DF2219BEBB0073438D /* Assets.xcassets */; };
+		39B723E32219BEBB0073438D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B723E12219BEBB0073438D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39B723D22219BEBB0073438D /* ChallangeCabOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallangeCabOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B723D52219BEBB0073438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39B723D72219BEBB0073438D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39B723DA2219BEBB0073438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39B723DD2219BEBB0073438D /* ChallangeCabOnline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallangeCabOnline.xcdatamodel; sourceTree = "<group>"; };
+		39B723DF2219BEBB0073438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39B723E22219BEBB0073438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39B723E42219BEBB0073438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39B723CF2219BEBB0073438D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B723C92219BEBB0073438D = {
+			isa = PBXGroup;
+			children = (
+				39B723D42219BEBB0073438D /* ChallangeCabOnline */,
+				39B723D32219BEBB0073438D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39B723D32219BEBB0073438D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B723D22219BEBB0073438D /* ChallangeCabOnline.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B723D42219BEBB0073438D /* ChallangeCabOnline */ = {
+			isa = PBXGroup;
+			children = (
+				39B723D52219BEBB0073438D /* AppDelegate.swift */,
+				39B723D72219BEBB0073438D /* ViewController.swift */,
+				39B723D92219BEBB0073438D /* Main.storyboard */,
+				39B723DF2219BEBB0073438D /* Assets.xcassets */,
+				39B723E12219BEBB0073438D /* LaunchScreen.storyboard */,
+				39B723E42219BEBB0073438D /* Info.plist */,
+				39B723DC2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld */,
+			);
+			path = ChallangeCabOnline;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39B723D12219BEBB0073438D /* ChallangeCabOnline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B723E72219BEBB0073438D /* Build configuration list for PBXNativeTarget "ChallangeCabOnline" */;
+			buildPhases = (
+				39B723CE2219BEBB0073438D /* Sources */,
+				39B723CF2219BEBB0073438D /* Frameworks */,
+				39B723D02219BEBB0073438D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChallangeCabOnline;
+			productName = ChallangeCabOnline;
+			productReference = 39B723D22219BEBB0073438D /* ChallangeCabOnline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39B723CA2219BEBB0073438D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Kroppe;
+				TargetAttributes = {
+					39B723D12219BEBB0073438D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 39B723CD2219BEBB0073438D /* Build configuration list for PBXProject "ChallangeCabOnline" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39B723C92219BEBB0073438D;
+			productRefGroup = 39B723D32219BEBB0073438D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39B723D12219BEBB0073438D /* ChallangeCabOnline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39B723D02219BEBB0073438D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B723E32219BEBB0073438D /* LaunchScreen.storyboard in Resources */,
+				39B723E02219BEBB0073438D /* Assets.xcassets in Resources */,
+				39B723DB2219BEBB0073438D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39B723CE2219BEBB0073438D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B723DE2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld in Sources */,
+				39B723D82219BEBB0073438D /* ViewController.swift in Sources */,
+				39B723D62219BEBB0073438D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39B723D92219BEBB0073438D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B723DA2219BEBB0073438D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39B723E12219BEBB0073438D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B723E22219BEBB0073438D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39B723E52219BEBB0073438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39B723E62219BEBB0073438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39B723E82219BEBB0073438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G55994227;
+				INFOPLIST_FILE = ChallangeCabOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kroppe83.se.ChallangeCabOnline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39B723E92219BEBB0073438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G55994227;
+				INFOPLIST_FILE = ChallangeCabOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kroppe83.se.ChallangeCabOnline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B723CD2219BEBB0073438D /* Build configuration list for PBXProject "ChallangeCabOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B723E52219BEBB0073438D /* Debug */,
+				39B723E62219BEBB0073438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B723E72219BEBB0073438D /* Build configuration list for PBXNativeTarget "ChallangeCabOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B723E82219BEBB0073438D /* Debug */,
+				39B723E92219BEBB0073438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39B723DC2219BEBB0073438D /* ChallangeCabOnline.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39B723DD2219BEBB0073438D /* ChallangeCabOnline.xcdatamodel */,
+			);
+			currentVersion = 39B723DD2219BEBB0073438D /* ChallangeCabOnline.xcdatamodel */;
+			path = ChallangeCabOnline.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39B723CA2219BEBB0073438D /* Project object */;
+}
