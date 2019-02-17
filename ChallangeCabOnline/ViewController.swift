@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var UIAIView: UIActivityIndicatorView!
-    @IBOutlet weak var dogImageView: UIImageView!
     @IBOutlet weak var dogTableView: UITableView!
     var dogs: [DogModel] = []
     var dataService = DataService()
+    var selectedDog: DogModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,42 +23,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         dogTableView.delegate = self
         dogTableView.dataSource = self
         
-
- 
             //dataService.deleteCoreData(){data in print(data) }
-        
+    
     }
     override func viewWillAppear(_ animated: Bool) {
+
+            updateTableView()
         
-        dataService.loadCoreData() {dogs in
-            
-            self.dogs = dogs
-            if(dogs.count != 0) {
-                DispatchQueue.main.async {
-                    
-                    self.dogTableView.reloadData()
-                    self.UIAIView.stopAnimating()
-                    self.UIAIView.isHidden = true
-                }
-                
-            } else {
-                
-                self.dataService.getAndSaveData(){
-                    self.dataService.loadCoreData() {dogs in
-                        self.dogs = dogs
-                        if(dogs.count != 0) {
-                            DispatchQueue.main.async {
-                                self.dogTableView.reloadData()
-                                self.UIAIView.stopAnimating()
-                                self.UIAIView.isHidden = true
-                            }
-                        }
-                    }
-                }
-            }
-            print(dogs.count)
-            
-        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,10 +44,54 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        DispatchQueue.main.async {
-            self.dogImageView.image = self.dogs[indexPath.row].dogImage
+
+            self.selectedDog = self.dogs[indexPath.row]       
+            self.performSegue(withIdentifier: "DogView", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is DogViewController
+        {
+            let vc = segue.destination as? DogViewController
+            vc?.dog = self.selectedDog
+        }
+    }
+    
+    func updateTableView() {
+        
+        dataService.loadCoreData() {dogs in
+            
+            self.dogs = dogs
+            if(dogs.count != 0) {
+                DispatchQueue.main.async {
+                    
+                    self.dogTableView.reloadData()
+                    self.UIAIView.stopAnimating()
+                    self.UIAIView.isHidden = true
+
+                }
+                
+            } else {
+                
+                self.dataService.getAndSaveData(){
+                    self.dataService.loadCoreData() {dogs in
+                        self.dogs = dogs
+                        if(dogs.count != 0) {
+                            DispatchQueue.main.async {
+                                self.dogTableView.reloadData()
+                                self.UIAIView.stopAnimating()
+                                self.UIAIView.isHidden = true
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            print(dogs.count)
             
         }
+        
     }
     
 
